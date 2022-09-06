@@ -10,21 +10,25 @@ public class MediaDoAluno {
 		double n1;
 		double n2;
 		double m;
+		String nome;
 		
-		System.out.println("Qual a primeira nota do aluno? ");
+		System.out.println("Qual o nome do aluno? ");
+		nome = resp.next();
+		
+		System.out.println("Qual a primeira nota? ");
 		n1 = resp.nextDouble();
 		
-		System.out.println("Qual a segunda nota do aluno? ");
+		System.out.println("Agora a segunda nota? ");
 		n2 = resp.nextDouble();
 		
 		m = (n1 + n2) / 2;
 		
-		System.out.println("A media do aluno e: " + m);
+		System.out.println("A media do aluno " + nome + " e: " + m);
 		
 		if (m >= 5) {
-			System.out.println("Aluno aprovado!");
-		} else if(m < 5) {
-			System.out.println("Aluno reprovado!");
+			System.out.println("O Aluno " + nome +" foi aprovado!");
+		} else {
+			System.out.println("O Aluno " + nome + " foi reprovado!");
 		}
 		
 	}
